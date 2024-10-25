@@ -428,13 +428,13 @@ h3 {
 
 #place .big-cloud {
   height: 120px;
-  right: 500px;
+  right: 120px;
   top: 60px;
 }
 
 #place .little-cloud {
-  height: 70px;
-  right: 1000px;
+  height: 50px;
+  right: 400px;
   top: 200px;
 }
 
