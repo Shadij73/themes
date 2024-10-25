@@ -1,24 +1,24 @@
 .story #place {
-    background-image: url(../assets/images/Studio_Koukaki-image_place.png);
-    position: relative;
+  background-image: url(../assets/images/Studio_Koukaki-image_place.png);
+  position: relative;
 }
 
 #place .big-cloud {
-    height: 115px;
-    right: 650px;
-    top: 60px;
-  }
-
-
-#place .little-cloud {
-    height: 65px;
-    right: 1100px;
-    top: 200px;
+  height: 120px;
+  right: 500px;
+  top: 60px;
 }
 
-  .little-cloud, #place .big-cloud {
-    transition: transform 0.2s ease-out;
-    position: absolute;
-    filter: blur(23px);
+#place .little-cloud {
+  height: 70px;
+  right: 1000px;
+  top: 200px;
+}
+
+.little-cloud, #place .big-cloud {
+  transition: transform 0.2s ease-out;
+  position: absolute;
+  filter: blur(23px);
+  animation: cloudMove 4s linear infinite; /* Apply animation to clouds */
 }
 
