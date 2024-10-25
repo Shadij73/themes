@@ -58,11 +58,10 @@ document.addEventListener('scroll', function() {
     const totalHeight = document.body.scrollHeight - window.innerHeight; // Hauteur totale de défilement possible
     const scrollRatio = scrollPosition / totalHeight; // Ratio de défilement actuel
 
-    const distanceDeplacementLittleCloud = 1200; // Distance maximale de déplacement pour le petit nuage
-    const distanceDeplacementBigCloud = 1000; // Distance maximale de déplacement pour le gros nuage
+    const amplitudeDeplacement = 300; // L'amplitude de déplacement des nuages vers la gauche
 
-    const littleCloudMove = distanceDeplacementLittleCloud - (scrollRatio * distanceDeplacementLittleCloud);
-    const bigCloudMove = distanceDeplacementBigCloud - (scrollRatio * distanceDeplacementBigCloud);
+    const littleCloudMove = amplitudeDeplacement - (scrollRatio * amplitudeDeplacement);
+    const bigCloudMove = amplitudeDeplacement - (scrollRatio * amplitudeDeplacement);
 
     if (littleCloud) {
         littleCloud.style.transform = `translateX(${littleCloudMove}px)`; // Déplacement du petit nuage
