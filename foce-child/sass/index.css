@@ -428,20 +428,20 @@ h3 {
 
 #place .big-cloud {
   height: 115px;
-  right: 360px;
+  right: 650px;
   top: 60px;
 }
 
 #place .little-cloud {
-  height: 50px;
-  right: 800px;
+  height: 100px;
+  right: 988px;
   top: 150px;
 }
 
 .little-cloud, #place .big-cloud {
   transition: transform 0.2s ease-out;
   position: absolute;
-  filter: blur(20px);
+  filter: blur(23px);
 }
 
 .story h2::after {
